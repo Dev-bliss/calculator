@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(268, 75%, 9%);
+}
+h2{
+    color: hsl(52, 100%, 62%);
+    margin-left: 20px;
+    padding: 10px;
+    margin: 12px;
+    margin-bottom: -20px;
+}
+#calculator{
+    font-family: Arial, sans-serif;
+    border-radius: 15px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 3px; */
+}
+
+#display{
+    width: 90%;
+    height: 70px;
+    padding: 13px;
+    text-align: right;
+    border: none;
+    background-color: hsl(268, 71%, 12%);
+    border-radius: 9px;
+    margin: 20px;
+    color: hsl(52, 100%, 62%);
+    font-weight: bolder;
+    font-size: 15px;
+    
+}
+
+#keys{
+    display: grid;
+    width: 80%;
+    height: 210px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    padding: 25px;
+    /* background-color:  hsl(268, 71%, 12%) ; */
+    border-radius: 4px;
+    margin-left: 20px;
+    background-color:  hsl(268, 71%, 12%);   
+}
+
+button{
+    width: 50px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    border: 1px solid black;
+    border-bottom: 5px solid hsl(281, 89%, 26%);
+    background-color: hsl(268, 71%, 12%);
+    color: hwb(52 24% 0%);
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+}
+button:hover{
+    background-color: hsl(281, 89%, 26%);
+}
+button:active{
+   background-color: hsl(281, 89%, 50%); 
+}
+.c5{
+    display: flex;
+    width: 98%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px ;
+    border-radius: 4px;
+    background-color:  hsl(268, 71%, 12%);
+    height: 80px;
+}
+.equal-btn{
+    /* flex-grow: 1; */
+    width: 40%;
+    margin: 3px;
+    color: black;
+    background-color: hsl(177, 92%, 70%);
+    border-bottom: 5px solid hsl(177, 92%, 70%);
+    font-size: 15px;
+}
+.equal-btn:hover{
+    background-color:  hsl(177, 92%, 70%);
+    
+}
+.reset-btn{
+    /* flex-grow: 1; */
+    width: 40%;
+    margin: 3px;
+    color: white;
+    font-size: 15px;
+    background-color: hsl(285, 91%, 52%);
+    border-bottom: 5px solid hsl(281, 89%, 50%);
+    /* width: 30%; */
+}
